@@ -2,7 +2,6 @@ import sqlite3
 import pandas as pd
 
 
-
 def wrtitedb(data):
     con = sqlite3.connect('exchangerate.db')
     df = pd.DataFrame(data)
