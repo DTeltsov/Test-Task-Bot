@@ -16,7 +16,7 @@ Exchange function is unvailable in free account
 
 bot = telebot.TeleBot(token)
 
-#When last request was. If <10, we get data from local db. Else, we write new data to db
+#When last request was. If <10, we get data from local db. Else, we write new data to db.
 def time_check():
     lastrequest = datetime.fromtimestamp(get_time())
     delta = datetime.now() - lastrequest
